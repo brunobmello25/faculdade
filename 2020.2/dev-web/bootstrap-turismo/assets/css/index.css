@@ -1,3 +1,11 @@
 .navbar-logo {
   width: 90px;
 }
+
+.bgimage {
+  background-image: url("../images/panoramica1.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 69px;
+}
