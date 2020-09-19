@@ -76,7 +76,7 @@
 
       <h4 id="passeios mb-3">Nossos Passeios</h4>
 
-      <div class="row">
+      <div class="row mb-4">
         <div class="col-lg-4 col-md-6">
           <div class="card mb-3">
             <img src="assets/images/p-ciclovia.jpg" alt="Ciclovias" />
@@ -250,44 +250,146 @@
       <br />
     </div>
 
-    <h4 id="excursoes">Nossas Excursões</h4>
-    <h5>
-      <a href="#">Ilha Grande</a>
-    </h5>
-    <img src="assets/images/e-vila-abraao.jpg" alt="Vila do abraão" />
-    <h5>Vila do abraão</h5>
-    <span
-      >É o principal local de chegada à Ilha Grande. Lá você encontra pousadas,
-      campings, restaurantes, etc.</span
-    >
+    <h4 id="excursoes" class="mb-3">Nossas Excursões</h4>
 
-    <img
-      class="img-fluid"
-      src="assets/images/e-lagoa-azul.jpg"
-      alt="Lagoa azul"
-    />
-    <h5>Lagoa azul</h5>
-    <span
-      >Um local muito lindo com água azul turquesa e muitos peixes. Só é
-      possível chegar lá de barco.</span
-    >
+    <div class="accordion" id="accordion">
+      <div class="card">
+        <div class="card-header" id="card-header-ilha">
+          <h5 class="mb-0">
+            <a
+              href="#ilha"
+              data-toggle="collapse"
+              aria-expanded="true"
+              aria-controls="ilha"
+              >Ilha Grande</a
+            >
+          </h5>
+        </div>
+        <div
+          id="ilha"
+          class="collapse show"
+          data-parent="#accordion"
+          aria-labelledby="card-header-ilha"
+        >
+          <div class="card-body row">
+            <div class="col-lg-6">
+              <div class="media">
+                <img
+                  src="assets/images/e-vila-abraao.jpg"
+                  alt="Vila do abraão"
+                />
+                <div class="media-body">
+                  <h5>Vila do abraão</h5>
+                  <span class="text-media-body"
+                    >É o principal local de chegada à Ilha Grande. Lá você
+                    encontra pousadas, campings, restaurantes, etc.</span
+                  >
+                </div>
+              </div>
+            </div>
 
-    <img
-      src="assets/images/e-praia-do-aventureiro.jpg"
-      alt="Praia do aventureiro"
-    />
-    <h5>Praia do aventureiro</h5>
-    <span
-      >Uma das mais bonitas da Ilha Grande. A praia mede 600 metros e o mar é
-      ótimo para a prática do Surf.</span
-    >
+            <div class="col-lg-6">
+              <div class="media">
+                <img
+                  class="img-fluid"
+                  src="assets/images/e-lagoa-azul.jpg"
+                  alt="Lagoa azul"
+                />
+                <div class="media-body">
+                  <h5>Lagoa azul</h5>
+                  <span class="text-media-body"
+                    >Um local muito lindo com água azul turquesa e muitos
+                    peixes. Só é possível chegar lá de barco.</span
+                  >
+                </div>
+              </div>
+            </div>
 
-    <img src="assets/images/e-lopes-mendes.jpg" alt="Lopes Mendes" />
-    <h5>Lopes Mendes</h5>
-    <span
-      >A mais famosa praia da Ilha Grande. São 3 km de areia muito branca e água
-      cristalina.</span
-    >
+            <div class="col-lg-6">
+              <div class="media">
+                <img
+                  src="assets/images/e-praia-do-aventureiro.jpg"
+                  alt="Praia do aventureiro"
+                />
+                <div class="media-body">
+                  <h5>Praia do aventureiro</h5>
+                  <span class="text-media-body"
+                    >Uma das mais bonitas da Ilha Grande. A praia mede 600
+                    metros e o mar é ótimo para a prática do Surf.</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="media">
+                <img
+                  src="assets/images/e-lopes-mendes.jpg"
+                  alt="Lopes Mendes"
+                />
+                <div class="media-body">
+                  <h5>Lopes Mendes</h5>
+                  <span class="text-media-body"
+                    >A mais famosa praia da Ilha Grande. São 3 km de areia muito
+                    branca e água cristalina.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="card-header-paraty">
+          <h5 class="mb-0">
+            <a
+              href="#paraty"
+              data-toggle="collapse"
+              aria-expanded="false"
+              aria-controls="paraty"
+              >Paraty</a
+            >
+          </h5>
+        </div>
+        <div
+          id="paraty"
+          class="collapse"
+          data-parent="#accordion"
+          aria-labelledby="card-header-paraty"
+        >
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            sed.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="card-header-buzios">
+          <h5 class="mb-0">
+            <a
+              href="#buzios"
+              data-toggle="collapse"
+              aria-expanded="true"
+              aria-controls="buzios"
+              >Buzios e Arraial do Cabo</a
+            >
+          </h5>
+        </div>
+        <div
+          id="buzios"
+          class="collapse"
+          data-parent="#accordion"
+          aria-labelledby="card-header-buzios"
+        >
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            sed.
+          </div>
+        </div>
+      </div>
+    </div>
 
     <button>Mais Informações</button>
     <a href="cadastro.html">Contratar</a>
