@@ -13,3 +13,7 @@
 .jumbotron {
   margin-top: 89px;
 }
+
+.tooltip-inner {
+  max-width: 250px;
+}
