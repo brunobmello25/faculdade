@@ -2,12 +2,12 @@
   width: 90px;
 }
 
-.bgimage {
-  background-image: url("../images/panoramica1.jpg");
-  height: 400px;
-  background-size: cover;
-  background-position: center;
+.carousel {
   margin-top: 69px;
+}
+
+.carousel .carousel-inner img {
+  height: 350px;
 }
 
 .jumbotron {
