@@ -40,7 +40,7 @@
                 <a href="#" class="dropdown-item">Livrarias</a>
               </div>
             </div>
-            <a class="nav-link nav-item" href="#">Reservas</a>
+            <a class="nav-link nav-item" href="#reservar" data-toggle="modal">Reservas</a>
             <a class="nav-link nav-item" href="#header">Contato</a>
           </div>
 
@@ -87,6 +87,98 @@
       <a href="#carousel" class="carousel-control-next" role="button" data-slide="next"
         ><span aria-hidden="true" class="carousel-control-next-icon"><span class="sr-only">Próxima</span></span></a
       >
+    </div>
+
+    <div class="modal fade" id="reservar">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title">Reserva de Passeios e Excursões</span>
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <fieldset class="form-group">
+                <legend class="font-weight-bold">Informações Pessoais</legend>
+
+                <div class="form-group row">
+                  <label for="name" class="col-form-label col-lg-2">Nome</label>
+                  <div class="col-lg-10"><input type="text" id="name" class="form-control" placeholder="Nome" /></div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="sex" class="col-form-label col-lg-2">Sexo</label>
+                  <div class="col-lg-10" style="padding-top: 7px">
+                    <div class="form-check form-check-inline">
+                      <input type="radio" id="male" class="form-check-input" name="sex" value="M" />
+                      <label for="male" class="form-check-label">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" id="female" class="form-check-input" name="sex" value="F" />
+                      <label for="female" class="form-check-label">Feminino</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="address" class="col-form-label col-lg-2">Endereço</label>
+                  <div class="col-lg-10">
+                    <input type="text" id="address" class="form-control" placeholder="Endereço" />
+                    <div class="invalid-feedback">Este campo deve ser informado.</div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group">
+                <legend class="font-weight-bold">Informações de Passeios e Excursões</legend>
+                <div class="form-group row">
+                  <label for="tour" class="col-form-label col-lg-2">Passeios</label>
+                  <div class="col-lg-10">
+                    <select name="tour" id="tour" class="form-control" multiple>
+                      <option value="1">Arcos da Lapa</option>
+                      <option value="2">Ciclovia</option>
+                      <option value="3">Copacabana</option>
+                      <option value="4">Cristo Redentor</option>
+                      <option value="5">Maracanã</option>
+                      <option value="6">Pão de Açúcar</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="excursion" class="col-form-label col-lg-2">Excursões</label>
+                  <div class="col-lg-10">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="ilha" id="ilha" />
+                      <label for="ilha">Ilha Grande</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="paraty" id="paraty" />
+                      <label for="paraty">Paraty</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="buzios" id="buzios" />
+                      <label for="buzios">Búzios</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="arraial" id="arraial" />
+                      <label for="arraial">Arraial do Cabo</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-lg-10 offset-lg-2">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container">
